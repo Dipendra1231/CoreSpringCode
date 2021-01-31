@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">    
+ 
+    <!-- Standalone list like LinkedList,Vector,ArrayList -->
+    <util:list list-class="java.util.Vector" id="mybestfriends">
+    <value>Manisha Jaiswal</value>
+    <value>Dipendra Jaiswal</value>
+    <value>Nisha Jaiswal</value>
+    <value>Alina Jha</value>
+    <value>Rasmi sah</value>
+    <value>Suman sapkota</value>
+    </util:list>
+    
+    <!-- Standalone map like HashMap,TreeMap -->
+    <util:map map-class="java.util.TreeMap" id="fees">
+    <entry key="Spring Framework" value="1000"></entry>
+    <entry key="Collections Framework" value="3000"></entry>
+    <entry key="Java Framework" value="5000"></entry>
+    <entry key="Spring Boot" value="500"></entry>
+    </util:map>
+    
+   <util:properties id="prop">
+   <prop key="Name">Dipendra jaiswal</prop>
+   <prop key="Address">Birgunj Murli-15 Parsa</prop>
+   <prop key="Gmail">jaiswaldipendra12@gmail.com</prop>
+   <prop key="Password">jdfg7t4ejfn</prop>
+   <prop key="Url">www.dj.co.in</prop>
+    </util:properties>
+    
+    <bean class="com.Durgesh.Collections.Standalone.Persion" id="persion">
+    <property name="friends" ref="mybestfriends"></property>
+    <property name="feestructure" ref="fees"></property>
+    <property name="properties" ref="prop"></property>
+    
+    <!--  <property name="friends">
+    <ref bean="mybestfriends"/>
+    </property> -->
+    </bean>
+   
+
+</beans>
