@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--   <bean class="com.AndroidTech4u.Employee" id="emp">
+    <constructor-arg value="23"></constructor-arg>
+    <constructor-arg value="Dipendra"></constructor-arg>
+    <constructor-arg ref="add"></constructor-arg> 
+    </bean>
+     -->
+   
+  
+    
+  <!--   <bean class="com.AndroidTech4u.Address"  id="add">
+    <constructor-arg value="23" type="int" index="3"></constructor-arg>
+    <constructor-arg value="Birgunj"></constructor-arg>
+    <constructor-arg value="Parsa"></constructor-arg>
+    <constructor-arg value="Nepal"></constructor-arg>
+    </bean>
+    
+    <bean class="com.AndroidTech4u.Employee" id="emp">
+    <constructor-arg ref="add"></constructor-arg> </bean>
+
+     -->
+     
+     
+    <!--  
+     <bean class="com.AndroidTech4u.Employee" id="emp">
+     <constructor-arg>
+     <array>
+     <value>Ram</value>
+     <value>Dipendra</value>
+     <value>Manisha</value>
+     </array>
+     </constructor-arg>
+     </bean>
+    -->
+    
+    <!--  <bean class="com.AndroidTech4u.QuestionList" id="que">
+    <constructor-arg value="1" type="int"></constructor-arg>
+    <constructor-arg value="What is Java"></constructor-arg>
+    <constructor-arg>
+    <list>
+        <ref bean="ans"/>
+        <ref bean="ans1"/>
+    </list>
+    </constructor-arg>
+    </bean>
+    
+    <bean class="com.AndroidTech4u.Answer" id="ans">
+    <constructor-arg value="java is Object Oriented Language"></constructor-arg>
+    </bean>
+    
+     <bean class="com.AndroidTech4u.Answer" id="ans1">
+    <constructor-arg value="java is a platform"></constructor-arg>
+    </bean>
+    -->
+    
+   <!--  <bean class="com.AndroidTech4u.Question" id="quee"></bean> -->
+  
+   <!-- <bean class="com.AndroidTech4u.QuestionMap" id="que">
+    <constructor-arg value="1" type="int"></constructor-arg>
+    <constructor-arg value="What is Java"></constructor-arg>
+    <constructor-arg>
+    <map>
+        <entry key="Posted by Dipendra" value="Java is Language"></entry>
+        <entry key="Posted by Jon" value="Java is plateform"></entry>
+    </map>
+    </constructor-arg>
+    </bean> --> 
+     
+    <!-- <bean class="com.AndroidTech4u.User1" id="U1">
+     <constructor-arg value="1" type="int"></constructor-arg>
+     <constructor-arg value="19/7/2020"></constructor-arg>
+     <constructor-arg value="Java is a PlateForm"></constructor-arg>
+      </bean>
+     
+     
+     <bean class="com.AndroidTech4u.User1" id="U2">
+     <constructor-arg value="2" type="int"></constructor-arg>
+     <constructor-arg value="12/4/2020"></constructor-arg>
+     <constructor-arg value="Java is a OOP's Concept"></constructor-arg>
+      </bean>
+     
+     
+     <bean class="com.AndroidTech4u.User2" id="U3">
+     <constructor-arg value="1" type="int"></constructor-arg>
+     <constructor-arg value="Dipendra"></constructor-arg>
+      </bean>
+     
+     
+     <bean class="com.AndroidTech4u.User2" id="U4">
+     <constructor-arg value="1" type="int"></constructor-arg>
+     <constructor-arg value="Jaiswal"></constructor-arg>
+      </bean>
+      
+      
+     <bean class="com.AndroidTech4u.mapWithGenricClass" id="mp">
+     <constructor-arg value="1" type="int"></constructor-arg>
+     <constructor-arg value="What is Java"></constructor-arg>
+     <constructor-arg>
+     <map>
+       <entry key-ref="U1" value-ref="U3"></entry>
+       <entry key-ref="U2" value-ref="U4"></entry>
+     </map>
+     </constructor-arg>
+      </bean>
+     
+     -->
+     
+     
+     <bean class="com.AndroidTech4u.Bike" id="b1">
+     <constructor-arg value="27361"></constructor-arg>
+     <constructor-arg value="FZ"></constructor-arg>
+     </bean>
+     
+     <bean class="com.AndroidTech4u.Splender" id="s1">
+     <constructor-arg value="DS4"></constructor-arg>
+     <constructor-arg value="37843.23" type="float"></constructor-arg>
+     </bean>
+ 
+     <bean class="com.AndroidTech4u.Bike" id="b2" parent="b1">
+     <constructor-arg ref="s1"></constructor-arg>
+     </bean> 
+</beans>
